@@ -2,6 +2,7 @@ FROM alfresco/alfresco-content-repository-community:6.2.0-ga
 
 USER root
 
+RUN yum install git
 RUN git clone https://github.com/Soldann/alfresco-s3-adapter.git
 RUN cd alfresco-s3-adapter && git checkout minio-feature
 
