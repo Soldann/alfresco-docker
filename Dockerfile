@@ -2,11 +2,11 @@ FROM alfresco/alfresco-content-repository-community:6.2.0-ga
 
 USER root
 
-RUN yum install git -y
+RUN yum install git
 RUN git clone https://github.com/Soldann/alfresco-s3-adapter.git
 RUN cd alfresco-s3-adapter && git checkout minio-feature
 
-RUN yum install maven -y
+RUN yum install maven
 RUN mvn clean install
 
 RUN cp target/alfresco-s3.amp /usr/local/tomcat/amps/alfresco-s3.amp
