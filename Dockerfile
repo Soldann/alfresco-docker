@@ -7,7 +7,7 @@ RUN git clone https://github.com/Soldann/alfresco-s3-adapter.git
 RUN cd alfresco-s3-adapter && git checkout minio-feature
 
 RUN yum install maven -y
-RUN cd alfresco-s3-adapter && mvn clean install
+RUN mvn clean install
 
 RUN cp target/alfresco-s3.amp /usr/local/tomcat/amps/alfresco-s3.amp
 
