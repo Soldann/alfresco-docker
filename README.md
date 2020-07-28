@@ -10,4 +10,4 @@ The following env variables are **required**:
 * ```BUCKET_NAME``` the name of the bucket you would like Alfresco to store data to
 * ```URL``` the URL of the S3 server
 
-Substitute alfresco/alfresco-content-repository-community:6.2.0-ga with this image where applicable (in docker-compose, kubernetes yaml, etc...)
+Substitute ```alfresco/alfresco-content-repository-community:6.2.0-ga``` with this image where applicable (in docker-compose, kubernetes yaml, etc...)
