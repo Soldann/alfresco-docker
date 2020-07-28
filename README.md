@@ -1,7 +1,7 @@
 # alfresco-docker
 Alfresco Dockerfile
 
-This Docker image deploys Alfresco 6.2.0 with https://github.com/Soldann/alfresco-s3-adapter.
+This Docker image deploys Alfresco 6.2.0 with https://github.com/Soldann/alfresco-s3-adapter for integration with an S3 ContentStore.
 
 ### Usage
 The following env variables are **required**:
