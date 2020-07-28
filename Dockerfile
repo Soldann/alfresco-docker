@@ -32,6 +32,7 @@ ENV SECRET_KEY=
 ENV BUCKET_NAME=
 ENV URL=
 
+# Use custom run script to edit alfresco-global.properties before launching alfresco
 ADD run.sh /usr/local/tomcat/bin/run.sh
 RUN chmod 777 /usr/local/tomcat/bin/run.sh && chmod 777 /usr/local/tomcat/webapps/alfresco/WEB-INF/classes/alfresco/module/alfresco-s3/
 
